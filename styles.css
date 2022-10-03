@@ -1,0 +1,131 @@
+:root {
+  --primary-cyan: hsl(171, 66%, 44%);
+  --primary-blue: hsl(233, 100%, 69%);
+  --neutral-dark-blue: hsl(210, 10%, 33%);
+  --neutral-blue: hsl(201, 11%, 66%);
+}
+
+/* box-sizing */
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: url("images/bg-header-mobile.png") no-repeat top;
+  color: var(--neutral-blue);
+}
+
+main {
+  text-align: center;
+  /* padding: 5%; */
+  margin: 20% 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--neutral-dark-blue);
+}
+
+.snippets, .clipboard-anywhere, .app-download {
+  margin: 25% 0;
+}
+
+.section-heading {
+  margin: 2.5rem 2rem 1rem;
+}
+
+.description {
+  line-height: 1.5;
+  margin: 0.5rem 0 2rem;
+}
+
+.sub-heading {
+  margin: 2.5rem 0 0.5rem;
+}
+
+.download-btn {
+  margin: 2rem 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn>a {
+  text-decoration: none;
+  color: #fff;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.ios-btn {
+  margin: 1rem 0;
+  background-color: var(--primary-cyan);
+  box-shadow: 2px 3px 0px #0c9984, -1px 3px 0px #0c9984;
+}
+
+.mac-btn {
+  margin: 0 0 1rem 0;
+  background-color: var(--primary-blue);
+  box-shadow: 2px 3px 0px #5869db, -1px 3px 0px #5869db;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.logo-illustration {
+  margin: 1.5rem 0 0;
+}
+
+.supporting-companies {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.company-logo {
+  margin: 1rem 0;
+}
+
+/* footer section */
+.attribution {
+  background-color: #c1cdd426;
+  padding: 2rem 0;
+}
+
+.footer-logo {
+  max-width: 3.5rem;
+}
+
+.about-us {
+  list-style: none;
+  line-height: 2;
+}
+
+.attribution-list > a {
+  text-decoration: none;
+  color: var(--neutral-blue);
+}
+
+.social-media-icons {
+  margin: 2rem 0;
+}
+
+.twitter-icon {
+  margin: 0 2rem;
+}
