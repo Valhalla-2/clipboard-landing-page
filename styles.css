@@ -21,11 +21,12 @@ html, body {
 body {
   background: url("images/bg-header-mobile.png") no-repeat top;
   color: var(--neutral-blue);
+  background-size: 100%;
 }
 
 main {
   text-align: center;
-  margin: 20% 1rem 0;
+  margin: 8rem 1rem 0;
 }
 
 h1, h2, h3 {
@@ -33,7 +34,7 @@ h1, h2, h3 {
 }
 
 .snippets, .clipboard-anywhere, .app-download {
-  margin: 25% 0;
+  margin: 5rem 0;
 }
 
 .section-heading {
@@ -128,4 +129,75 @@ h1, h2, h3 {
 
 .twitter-icon {
   margin: 0 2rem;
+}
+
+@media screen and (min-width:578px) {
+  body {
+    background: url("images/bg-header-desktop.png") no-repeat top;
+    background-size: 100%;
+  }
+
+  .btn {
+    max-width: 200px;
+    margin: 0.5rem;
+  }
+
+  .snippet-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .computer-demo {
+    margin-left: -3rem;
+  }
+
+  .features-wrapper {
+    text-align: start;
+  }
+
+  .description-padding {
+    padding: 0 28%;
+  }
+
+  .clipboard-anywhere {
+    padding: 0 10%;
+  }
+
+  .workflow-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .blacklist-wrapper>h3 {
+    margin: 1.9rem 0 0.5rem;
+  }
+
+  .supporting-companies {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0 10%;
+  }
+
+  /* footer section */
+  .attribution {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    flex-flow: row wrap;
+    color: #000;
+  }
+
+  .about-us {
+    display: flex;
+    gap: 5rem;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .attribution a {
+    color: inherit;
+  }
 }
